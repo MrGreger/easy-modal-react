@@ -1,11 +1,11 @@
-#Easy Modal for React
+# Easy Modal for React
 An simple, clean, and easy to use modal that supports any screen size and uses (mostly) modern CSS.
 
-##Installation
+## Installation
 `npm install easy-modal-react`
 
-##Usage
-###Simple
+## Usage
+### Simple
 ```
 import EasyModal from 'easy-modal-react';
 
@@ -17,7 +17,7 @@ import EasyModal from 'easy-modal-react';
 </EasyModal>
 ```
 
-###Advanced
+### Advanced
 ```
 import EasyModal, { EasyModalHeader, EasyModalFooter } from 'easy-modal-react';
 
@@ -31,7 +31,7 @@ import EasyModal, { EasyModalHeader, EasyModalFooter } from 'easy-modal-react';
 </EasyModal>
 ```
 
-###Props
+### Props
 |Prop|PropType|Description|
 |---|---|---|
 |`open` (required)|`PropTypes.bool`|Tells EasyModal weather it is open or closed<br><br>Options: `true` \| `false`|
