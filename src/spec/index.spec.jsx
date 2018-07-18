@@ -37,14 +37,6 @@ describe('DLSModal', () => {
     matchSnapshot(subject);
   });
 
-  it('adds the fill screen class when fullScreen is true', () => {
-    const subject = shallow(<DLSModal {...props} open fullScreen>hahaha hello</DLSModal>);
-
-    expect(subject.find({ className: 'modal-container' })).not.toBePresent();
-    expect(subject.find({ className: 'modal-container modal-container--full-screen' })).toBePresent();
-    matchSnapshot(subject);
-  });
-
   it('calls onClose when user clicks outside the content area', () => {
     const mockFunction = jest.fn();
     const subject = shallow(

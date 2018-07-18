@@ -15,12 +15,7 @@ module.exports = {
         test: /\.js?x$/,
         include: path.resolve(__dirname, 'src'),
         exclude: /(node_modules|build)/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['env', 'stage-3']
-          }
-        }
+        use: 'babel-loader'
       },
 			{
 				test: /\.s?css$/,

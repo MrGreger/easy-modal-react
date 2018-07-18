@@ -11,22 +11,39 @@ import EasyModalFooter from './EasyModalFooter';
 import styles from './EasyModal.scss';
 
 class EasyModal extends React.PureComponent {
-  constructor() {
-    super();
+	state = {
+		eventListenerBound: false
+	}
+	
+	static propTypes = {
+		open: PropTypes.bool.isRequired,
+		onClose: PropTypes.func.isRequired,
+		children: PropTypes.node.isRequired,
+		className: PropTypes.string,
+		header: PropTypes.oneOfType([
+			PropTypes.string,
+			PropTypes.node
+		]),
+		footer: PropTypes.oneOfType([
+			PropTypes.string,
+			PropTypes.node
+		])
+	};
 
-    this.body = document.body;
-  }
+	static defaultProps = {
+		className: '',
+		header: '',
+		footer: ''
+	};
 
   componentWillMount() {
-    this.toggleListeners();
+		if (this.props.open) {
+			this.addListeners();
+		}
   }
 
   componentDidMount() {
     this.updateHeight();
-  }
-
-  componentWillUpdate() {
-    this.toggleListeners();
   }
 
   componentDidUpdate() {
@@ -37,15 +54,9 @@ class EasyModal extends React.PureComponent {
     this.removeListeners();
   }
 
-  getModalStyleName() {
-    const { fullScreen } = this.props;
-
-    return classNames('modal-container', { 'modal-container--full-screen': fullScreen });
-  }
-
-  keyListener(event) {
+  keyListener = (event) => {
     const { onClose } = this.props;
-    const escapeKey = event.key === 'Escape' || event.key === 'Esc';
+		const escapeKey = event.key === 'Escape' || event.key === 'Esc';
 
     // close modal when user hits escape
     if (escapeKey) {
@@ -54,7 +65,7 @@ class EasyModal extends React.PureComponent {
     }
   }
 
-  toggleListeners() {
+  toggleListeners = () => {
     const { open } = this.props;
 
     if (open) {
@@ -64,14 +75,20 @@ class EasyModal extends React.PureComponent {
     }
   }
 
-  addListeners() {
-    this.body.classList.add('has-modal');
-    window.addEventListener('keydown', this.keyListener.bind(this));
+  addListeners = () => {
+		if (!this.state.eventListenerBound) {
+			document.body.classList.add('has-modal');
+			window.addEventListener('keydown', this.keyListener);
+			this.setState({ eventListenerBound: true });
+		}
   }
-
-  removeListeners() {
-    this.body.classList.remove('has-modal');
-    window.removeEventListener('keydown', this.keyListener.bind(this));
+	
+  removeListeners = () => {
+		if (this.state.eventListenerBound) {
+			document.body.classList.remove('has-modal');
+			window.removeEventListener('keydown', this.keyListener);
+			this.setState({ eventListenerBound: false });
+		}
   }
 
   updateHeight() {
@@ -117,10 +134,10 @@ class EasyModal extends React.PureComponent {
     const cssClass = className ? { className } : {};
 
     return (
-      <div styleName={this.getModalStyleName()}>
+      <div styleName="modal-container>
         <div
           styleName="modal-overlay"
-          onClick={() => onClose()}
+          onClick={onClose}
         />
         <div styleName="modal-content" ref={div => this.modal = div}>
           <div styleName="modal">
@@ -152,35 +169,13 @@ class EasyModal extends React.PureComponent {
 				in={this.props.open}
 				mountOnEnter
 				unmountOnExit
+				addEndListener={this.toggleListeners}
       >
         {this.renderContent()}
       </CSSTransition>
     );
   }
 }
-
-EasyModal.propTypes = {
-  open: PropTypes.bool.isRequired,
-  onClose: PropTypes.func.isRequired,
-  children: PropTypes.node.isRequired,
-  className: PropTypes.string,
-  header: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.node
-  ]),
-  footer: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.node
-  ]),
-  fullScreen: PropTypes.bool
-};
-
-EasyModal.defaultProps = {
-  className: '',
-  header: '',
-  footer: null,
-  fullScreen: false
-};
 
 export default CSSModules(EasyModal, styles);
 export {

@@ -70,10 +70,6 @@ $default-modal-width: 400px;
   top: 50%;
   transform: translate(-50%, -50%);
 
-  .modal-container--full-screen > & {
-    @include modal-content-mobile-and-full-screen;
-  }
-
   @media (max-width: $ipad-width) {
     @include modal-content-mobile-and-full-screen;
   }
@@ -95,10 +91,6 @@ $default-modal-width: 400px;
   min-width: 480px;
   overflow: hidden;
   position: relative;
-
-  .modal-container--full-screen > .modal-content > & {
-    @include modal-mobile-and-full-screen;
-  }
 
   @media (max-width: $ipad-width) {
     @include modal-mobile-and-full-screen;
@@ -157,12 +149,6 @@ $default-modal-width: 400px;
   padding: 32px;
   width: 100%;
   -ms-overflow-style: -ms-autohiding-scrollbar;
-
-  .modal-container--full-screen > .modal-content > .modal > & {
-    @include modal-message-mobile-and-full-screen;
-    max-width: initial;
-    padding: 0;
-  }
 
   @media (max-width: $ipad-width) {
     @include modal-message-mobile-and-full-screen;
