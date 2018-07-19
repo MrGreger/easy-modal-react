@@ -51,3 +51,6 @@ import EasyModal, { EasyModalHeader, EasyModalFooter } from 'easy-modal-react';
 |---|---|---|
 |`onCancel` (required)|`PropTypes.func`|Called by EasyModal when the user clicks the "Cancel" button. Should update state for `open`|
 |`onApprove` (required)|`PropTypes.func`|Called by EasyModal when the user clicks the "Ok" button. Should update state for `open`|
+
+### Browser Support
+Tested in all modern browsers as well as IE11.
