@@ -31,7 +31,7 @@ class EasyModal extends React.PureComponent {
 		header: '',
 		footer: ''
 	};
-	
+
 	state = {
 		eventListenerBound: false
 	}
@@ -78,7 +78,7 @@ class EasyModal extends React.PureComponent {
   addListeners = () => {
 		if (!this.state.eventListenerBound) {
 			document.body.classList.add('has-modal');
-			window.addEventListener('keydown', this.keyListener);
+			global.addEventListener('keydown', this.keyListener);
 			this.setState({ eventListenerBound: true });
 		}
   }
@@ -86,7 +86,7 @@ class EasyModal extends React.PureComponent {
   removeListeners = () => {
 		if (this.state.eventListenerBound) {
 			document.body.classList.remove('has-modal');
-			window.removeEventListener('keydown', this.keyListener);
+			global.removeEventListener('keydown', this.keyListener);
 			this.setState({ eventListenerBound: false });
 		}
   }
@@ -101,7 +101,7 @@ class EasyModal extends React.PureComponent {
       Adding a fixed height forces a repaint, which fixes this.
     */
     if (this.modal && isIE11) {
-      const modalTooTall = this.modal.scrollHeight > window.innerHeight;
+      const modalTooTall = this.modal.scrollHeight > global.innerHeight;
 
       if (modalTooTall) {
         this.modal.style.height = '100%';
