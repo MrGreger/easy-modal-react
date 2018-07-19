@@ -18,9 +18,10 @@ class EasyModalHeader extends React.PureComponent {
           onClick={() => onClose()}
           styleName="modal-close"
         >
-          <span styleName="modal-close-label">
-            close
-          </span>
+          <span styleName="modal-close-label">close</span>
+					<svg viewBox="0 0 40 40" styleName="modal-close-icon">
+						<path d="M 5,5 L 35,35 M 35,5 L 5,35" />
+					</svg>
         </button>
       </div>
     );

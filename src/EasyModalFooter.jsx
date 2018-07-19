@@ -17,12 +17,13 @@ class EasyModalFooter extends React.PureComponent {
           onClick={() => this.props.onCancel()}
           styleName="modal-footer-cancel"
         >
-          cancel
+          Cancel
         </button>
         <button
           onClick={() => this.props.onApprove()}
+          styleName="modal-footer-ok"
         >
-          ok
+          Ok
         </button>
       </div>
     );
