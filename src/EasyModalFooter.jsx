@@ -5,6 +5,11 @@ import PropTypes from 'prop-types';
 import styles from './EasyModal.scss';
 
 class EasyModalFooter extends React.PureComponent {
+	static propTypes = {
+		onCancel: PropTypes.func.isRequired,
+		onApprove: PropTypes.func.isRequired
+	};
+
   render() {
     return (
       <div styleName="modal-footer">
@@ -23,10 +28,5 @@ class EasyModalFooter extends React.PureComponent {
     );
   }
 }
-
-EasyModalFooter.propTypes = {
-  onCancel: PropTypes.func.isRequired,
-  onApprove: PropTypes.func.isRequired
-};
 
 export default CSSModules(EasyModalFooter, styles);

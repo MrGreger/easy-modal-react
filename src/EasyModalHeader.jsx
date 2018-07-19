@@ -5,6 +5,10 @@ import PropTypes from 'prop-types';
 import styles from './EasyModal.scss';
 
 class EasyModalHeader extends React.PureComponent {
+	static propTypes = {
+		onClose: PropTypes.func.isRequired
+	};
+
   render() {
     const { onClose } = this.props;
 
@@ -22,9 +26,5 @@ class EasyModalHeader extends React.PureComponent {
     );
   }
 }
-
-EasyModalHeader.propTypes = {
-  onClose: PropTypes.func.isRequired
-};
 
 export default CSSModules(EasyModalHeader, styles);

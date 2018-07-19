@@ -10,11 +10,7 @@ import EasyModalFooter from './EasyModalFooter';
 
 import styles from './EasyModal.scss';
 
-class EasyModal extends React.PureComponent {
-	state = {
-		eventListenerBound: false
-	}
-	
+class EasyModal extends React.PureComponent {	
 	static propTypes = {
 		open: PropTypes.bool.isRequired,
 		onClose: PropTypes.func.isRequired,
@@ -35,6 +31,10 @@ class EasyModal extends React.PureComponent {
 		header: '',
 		footer: ''
 	};
+	
+	state = {
+		eventListenerBound: false
+	}
 
   componentWillMount() {
 		if (this.props.open) {
@@ -131,13 +131,13 @@ class EasyModal extends React.PureComponent {
 
   renderContent() {
     const { children, onClose, className } = this.props;
-    const cssClass = className ? { className } : {};
+		const cssClass = className ? { className } : {};
 
     return (
-      <div styleName="modal-container>
+      <div styleName="modal-container">
         <div
-          styleName="modal-overlay"
-          onClick={onClose}
+					styleName="modal-overlay"
+					onClick={onClose}
         />
         <div styleName="modal-content" ref={div => this.modal = div}>
           <div styleName="modal">
