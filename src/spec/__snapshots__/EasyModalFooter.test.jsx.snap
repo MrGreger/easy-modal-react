@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EasyModalFooter renders 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <EasyModalFooter
+    onApprove={[Function]}
+    onCancel={[Function]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <button
+          className="modal-footer-cancel"
+          onClick={[Function]}
+        >
+          Cancel
+        </button>,
+        <button
+          className="modal-footer-ok"
+          onClick={[Function]}
+        >
+          Ok
+        </button>,
+      ],
+      "className": "modal-footer",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": ".0",
+        "nodeType": "host",
+        "props": Object {
+          "children": "Cancel",
+          "className": "modal-footer-cancel",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Cancel",
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": ".1",
+        "nodeType": "host",
+        "props": Object {
+          "children": "Ok",
+          "className": "modal-footer-ok",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Ok",
+        "type": "button",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <button
+            className="modal-footer-cancel"
+            onClick={[Function]}
+          >
+            Cancel
+          </button>,
+          <button
+            className="modal-footer-ok"
+            onClick={[Function]}
+          >
+            Ok
+          </button>,
+        ],
+        "className": "modal-footer",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": ".0",
+          "nodeType": "host",
+          "props": Object {
+            "children": "Cancel",
+            "className": "modal-footer-cancel",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Cancel",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": ".1",
+          "nodeType": "host",
+          "props": Object {
+            "children": "Ok",
+            "className": "modal-footer-ok",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Ok",
+          "type": "button",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

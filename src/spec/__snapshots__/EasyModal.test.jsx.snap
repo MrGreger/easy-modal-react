@@ -1,0 +1,1133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EasyModal renders custom footer 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <EasyModal
+    className=""
+    footer="test footer"
+    header=""
+    onClose={[Function]}
+    open={true}
+  >
+    hahaha hello
+  </EasyModal>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "addEndListener": [Function],
+      "appear": false,
+      "children": <div
+        className="modal-container"
+      >
+        <div
+          className="modal-overlay"
+          onClick={[Function]}
+        />
+        <div
+          className="modal-content"
+        >
+          <div
+            className="modal"
+          >
+            <div
+              className="modal-top"
+            />
+            <div
+              className="modal-message"
+            >
+              hahaha hello
+            </div>
+            <div
+              className="modal-bottom"
+            >
+              test footer
+            </div>
+          </div>
+        </div>
+      </div>,
+      "classNames": "EasyModal",
+      "enter": true,
+      "exit": true,
+      "in": true,
+      "mountOnEnter": true,
+      "timeout": 250,
+      "unmountOnExit": true,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="modal-overlay"
+            onClick={[Function]}
+          />,
+          <div
+            className="modal-content"
+          >
+            <div
+              className="modal"
+            >
+              <div
+                className="modal-top"
+              />
+              <div
+                className="modal-message"
+              >
+                hahaha hello
+              </div>
+              <div
+                className="modal-bottom"
+              >
+                test footer
+              </div>
+            </div>
+          </div>,
+        ],
+        "className": "modal-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": ".0",
+          "nodeType": "host",
+          "props": Object {
+            "className": "modal-overlay",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": ".1",
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              className="modal"
+            >
+              <div
+                className="modal-top"
+              />
+              <div
+                className="modal-message"
+              >
+                hahaha hello
+              </div>
+              <div
+                className="modal-bottom"
+              >
+                test footer
+              </div>
+            </div>,
+            "className": "modal-content",
+          },
+          "ref": [Function],
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="modal-top"
+                />,
+                <div
+                  className="modal-message"
+                >
+                  hahaha hello
+                </div>,
+                <div
+                  className="modal-bottom"
+                >
+                  test footer
+                </div>,
+              ],
+              "className": "modal",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": ".0",
+                "nodeType": "host",
+                "props": Object {
+                  "children": null,
+                  "className": "modal-top",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": ".1",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "hahaha hello",
+                  "className": "modal-message",
+                },
+                "ref": null,
+                "rendered": "hahaha hello",
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": ".2",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "test footer",
+                  "className": "modal-bottom",
+                },
+                "ref": null,
+                "rendered": "test footer",
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "addEndListener": [Function],
+        "appear": false,
+        "children": <div
+          className="modal-container"
+        >
+          <div
+            className="modal-overlay"
+            onClick={[Function]}
+          />
+          <div
+            className="modal-content"
+          >
+            <div
+              className="modal"
+            >
+              <div
+                className="modal-top"
+              />
+              <div
+                className="modal-message"
+              >
+                hahaha hello
+              </div>
+              <div
+                className="modal-bottom"
+              >
+                test footer
+              </div>
+            </div>
+          </div>
+        </div>,
+        "classNames": "EasyModal",
+        "enter": true,
+        "exit": true,
+        "in": true,
+        "mountOnEnter": true,
+        "timeout": 250,
+        "unmountOnExit": true,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="modal-overlay"
+              onClick={[Function]}
+            />,
+            <div
+              className="modal-content"
+            >
+              <div
+                className="modal"
+              >
+                <div
+                  className="modal-top"
+                />
+                <div
+                  className="modal-message"
+                >
+                  hahaha hello
+                </div>
+                <div
+                  className="modal-bottom"
+                >
+                  test footer
+                </div>
+              </div>
+            </div>,
+          ],
+          "className": "modal-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": ".0",
+            "nodeType": "host",
+            "props": Object {
+              "className": "modal-overlay",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": ".1",
+            "nodeType": "host",
+            "props": Object {
+              "children": <div
+                className="modal"
+              >
+                <div
+                  className="modal-top"
+                />
+                <div
+                  className="modal-message"
+                >
+                  hahaha hello
+                </div>
+                <div
+                  className="modal-bottom"
+                >
+                  test footer
+                </div>
+              </div>,
+              "className": "modal-content",
+            },
+            "ref": [Function],
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="modal-top"
+                  />,
+                  <div
+                    className="modal-message"
+                  >
+                    hahaha hello
+                  </div>,
+                  <div
+                    className="modal-bottom"
+                  >
+                    test footer
+                  </div>,
+                ],
+                "className": "modal",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": ".0",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": null,
+                    "className": "modal-top",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": ".1",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "hahaha hello",
+                    "className": "modal-message",
+                  },
+                  "ref": null,
+                  "rendered": "hahaha hello",
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": ".2",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "test footer",
+                    "className": "modal-bottom",
+                  },
+                  "ref": null,
+                  "rendered": "test footer",
+                  "type": "div",
+                },
+              ],
+              "type": "div",
+            },
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`EasyModal renders custom header 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <EasyModal
+    className=""
+    footer=""
+    header="test header"
+    onClose={[Function]}
+    open={true}
+  >
+    hahaha hello
+  </EasyModal>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "addEndListener": [Function],
+      "appear": false,
+      "children": <div
+        className="modal-container"
+      >
+        <div
+          className="modal-overlay"
+          onClick={[Function]}
+        />
+        <div
+          className="modal-content"
+        >
+          <div
+            className="modal"
+          >
+            <div
+              className="modal-top"
+            >
+              test header
+            </div>
+            <div
+              className="modal-message"
+            >
+              hahaha hello
+            </div>
+            
+          </div>
+        </div>
+      </div>,
+      "classNames": "EasyModal",
+      "enter": true,
+      "exit": true,
+      "in": true,
+      "mountOnEnter": true,
+      "timeout": 250,
+      "unmountOnExit": true,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="modal-overlay"
+            onClick={[Function]}
+          />,
+          <div
+            className="modal-content"
+          >
+            <div
+              className="modal"
+            >
+              <div
+                className="modal-top"
+              >
+                test header
+              </div>
+              <div
+                className="modal-message"
+              >
+                hahaha hello
+              </div>
+              
+            </div>
+          </div>,
+        ],
+        "className": "modal-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": ".0",
+          "nodeType": "host",
+          "props": Object {
+            "className": "modal-overlay",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": ".1",
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              className="modal"
+            >
+              <div
+                className="modal-top"
+              >
+                test header
+              </div>
+              <div
+                className="modal-message"
+              >
+                hahaha hello
+              </div>
+              
+            </div>,
+            "className": "modal-content",
+          },
+          "ref": [Function],
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="modal-top"
+                >
+                  test header
+                </div>,
+                <div
+                  className="modal-message"
+                >
+                  hahaha hello
+                </div>,
+                "",
+              ],
+              "className": "modal",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": ".0",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "test header",
+                  "className": "modal-top",
+                },
+                "ref": null,
+                "rendered": "test header",
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": ".1",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "hahaha hello",
+                  "className": "modal-message",
+                },
+                "ref": null,
+                "rendered": "hahaha hello",
+                "type": "div",
+              },
+              "",
+            ],
+            "type": "div",
+          },
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "addEndListener": [Function],
+        "appear": false,
+        "children": <div
+          className="modal-container"
+        >
+          <div
+            className="modal-overlay"
+            onClick={[Function]}
+          />
+          <div
+            className="modal-content"
+          >
+            <div
+              className="modal"
+            >
+              <div
+                className="modal-top"
+              >
+                test header
+              </div>
+              <div
+                className="modal-message"
+              >
+                hahaha hello
+              </div>
+              
+            </div>
+          </div>
+        </div>,
+        "classNames": "EasyModal",
+        "enter": true,
+        "exit": true,
+        "in": true,
+        "mountOnEnter": true,
+        "timeout": 250,
+        "unmountOnExit": true,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="modal-overlay"
+              onClick={[Function]}
+            />,
+            <div
+              className="modal-content"
+            >
+              <div
+                className="modal"
+              >
+                <div
+                  className="modal-top"
+                >
+                  test header
+                </div>
+                <div
+                  className="modal-message"
+                >
+                  hahaha hello
+                </div>
+                
+              </div>
+            </div>,
+          ],
+          "className": "modal-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": ".0",
+            "nodeType": "host",
+            "props": Object {
+              "className": "modal-overlay",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": ".1",
+            "nodeType": "host",
+            "props": Object {
+              "children": <div
+                className="modal"
+              >
+                <div
+                  className="modal-top"
+                >
+                  test header
+                </div>
+                <div
+                  className="modal-message"
+                >
+                  hahaha hello
+                </div>
+                
+              </div>,
+              "className": "modal-content",
+            },
+            "ref": [Function],
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="modal-top"
+                  >
+                    test header
+                  </div>,
+                  <div
+                    className="modal-message"
+                  >
+                    hahaha hello
+                  </div>,
+                  "",
+                ],
+                "className": "modal",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": ".0",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "test header",
+                    "className": "modal-top",
+                  },
+                  "ref": null,
+                  "rendered": "test header",
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": ".1",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "hahaha hello",
+                    "className": "modal-message",
+                  },
+                  "ref": null,
+                  "rendered": "hahaha hello",
+                  "type": "div",
+                },
+                "",
+              ],
+              "type": "div",
+            },
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`EasyModal renders when open is true 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <EasyModal
+    className=""
+    footer=""
+    header=""
+    onClose={[Function]}
+    open={true}
+  >
+    content
+  </EasyModal>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "addEndListener": [Function],
+      "appear": false,
+      "children": <div
+        className="modal-container"
+      >
+        <div
+          className="modal-overlay"
+          onClick={[Function]}
+        />
+        <div
+          className="modal-content"
+        >
+          <div
+            className="modal"
+          >
+            <div
+              className="modal-top"
+            />
+            <div
+              className="modal-message"
+            >
+              content
+            </div>
+            
+          </div>
+        </div>
+      </div>,
+      "classNames": "EasyModal",
+      "enter": true,
+      "exit": true,
+      "in": true,
+      "mountOnEnter": true,
+      "timeout": 250,
+      "unmountOnExit": true,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="modal-overlay"
+            onClick={[Function]}
+          />,
+          <div
+            className="modal-content"
+          >
+            <div
+              className="modal"
+            >
+              <div
+                className="modal-top"
+              />
+              <div
+                className="modal-message"
+              >
+                content
+              </div>
+              
+            </div>
+          </div>,
+        ],
+        "className": "modal-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": ".0",
+          "nodeType": "host",
+          "props": Object {
+            "className": "modal-overlay",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": ".1",
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              className="modal"
+            >
+              <div
+                className="modal-top"
+              />
+              <div
+                className="modal-message"
+              >
+                content
+              </div>
+              
+            </div>,
+            "className": "modal-content",
+          },
+          "ref": [Function],
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="modal-top"
+                />,
+                <div
+                  className="modal-message"
+                >
+                  content
+                </div>,
+                "",
+              ],
+              "className": "modal",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": ".0",
+                "nodeType": "host",
+                "props": Object {
+                  "children": null,
+                  "className": "modal-top",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": ".1",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "content",
+                  "className": "modal-message",
+                },
+                "ref": null,
+                "rendered": "content",
+                "type": "div",
+              },
+              "",
+            ],
+            "type": "div",
+          },
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "addEndListener": [Function],
+        "appear": false,
+        "children": <div
+          className="modal-container"
+        >
+          <div
+            className="modal-overlay"
+            onClick={[Function]}
+          />
+          <div
+            className="modal-content"
+          >
+            <div
+              className="modal"
+            >
+              <div
+                className="modal-top"
+              />
+              <div
+                className="modal-message"
+              >
+                content
+              </div>
+              
+            </div>
+          </div>
+        </div>,
+        "classNames": "EasyModal",
+        "enter": true,
+        "exit": true,
+        "in": true,
+        "mountOnEnter": true,
+        "timeout": 250,
+        "unmountOnExit": true,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="modal-overlay"
+              onClick={[Function]}
+            />,
+            <div
+              className="modal-content"
+            >
+              <div
+                className="modal"
+              >
+                <div
+                  className="modal-top"
+                />
+                <div
+                  className="modal-message"
+                >
+                  content
+                </div>
+                
+              </div>
+            </div>,
+          ],
+          "className": "modal-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": ".0",
+            "nodeType": "host",
+            "props": Object {
+              "className": "modal-overlay",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": ".1",
+            "nodeType": "host",
+            "props": Object {
+              "children": <div
+                className="modal"
+              >
+                <div
+                  className="modal-top"
+                />
+                <div
+                  className="modal-message"
+                >
+                  content
+                </div>
+                
+              </div>,
+              "className": "modal-content",
+            },
+            "ref": [Function],
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="modal-top"
+                  />,
+                  <div
+                    className="modal-message"
+                  >
+                    content
+                  </div>,
+                  "",
+                ],
+                "className": "modal",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": ".0",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": null,
+                    "className": "modal-top",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": ".1",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "content",
+                    "className": "modal-message",
+                  },
+                  "ref": null,
+                  "rendered": "content",
+                  "type": "div",
+                },
+                "",
+              ],
+              "type": "div",
+            },
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
