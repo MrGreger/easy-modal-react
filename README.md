@@ -1,6 +1,8 @@
 # Easy Modal for React
 An simple, clean, and easy to use modal that supports any screen size and uses (mostly) modern CSS.
 
+![Modal preview](https://raw.githubusercontent.com/trickford/easy-modal-react/master/samples/sample.png)
+
 ## Installation
 `npm install easy-modal-react`
 
