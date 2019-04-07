@@ -10,36 +10,36 @@ import EasyModalFooter from './EasyModalFooter';
 
 import styles from './EasyModal.scss';
 
-class EasyModal extends React.PureComponent {	
-	static propTypes = {
-		open: PropTypes.bool.isRequired,
-		onClose: PropTypes.func.isRequired,
-		children: PropTypes.node.isRequired,
-		className: PropTypes.string,
-		header: PropTypes.oneOfType([
-			PropTypes.string,
-			PropTypes.node
-		]),
-		footer: PropTypes.oneOfType([
-			PropTypes.string,
-			PropTypes.node
-		])
-	};
+class EasyModal extends React.PureComponent {
+  static propTypes = {
+    open: PropTypes.bool.isRequired,
+    onClose: PropTypes.func.isRequired,
+    children: PropTypes.node.isRequired,
+    className: PropTypes.string,
+    header: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.node
+    ]),
+    footer: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.node
+    ])
+  };
 
-	static defaultProps = {
-		className: '',
-		header: '',
-		footer: ''
-	};
+  static defaultProps = {
+    className: '',
+    header: '',
+    footer: ''
+  };
 
-	state = {
-		eventListenerBound: false
-	}
+  state = {
+    eventListenerBound: false
+  }
 
   componentWillMount() {
-		if (this.props.open) {
-			this.addListeners();
-		}
+    if (this.props.open) {
+      this.addListeners();
+    }
   }
 
   componentDidMount() {
@@ -56,7 +56,7 @@ class EasyModal extends React.PureComponent {
 
   keyListener = (event) => {
     const { onClose } = this.props;
-		const escapeKey = event.key === 'Escape' || event.key === 'Esc';
+    const escapeKey = event.key === 'Escape' || event.key === 'Esc';
 
     // close modal when user hits escape
     if (escapeKey) {
@@ -76,19 +76,19 @@ class EasyModal extends React.PureComponent {
   }
 
   addListeners = () => {
-		if (!this.state.eventListenerBound) {
-			document.body.classList.add('has-modal');
-			global.addEventListener('keydown', this.keyListener);
-			this.setState({ eventListenerBound: true });
-		}
+    if (!this.state.eventListenerBound) {
+      document.body.classList.add('has-modal');
+      global.addEventListener('keydown', this.keyListener);
+      this.setState({ eventListenerBound: true });
+    }
   }
-	
+
   removeListeners = () => {
-		if (this.state.eventListenerBound) {
-			document.body.classList.remove('has-modal');
-			global.removeEventListener('keydown', this.keyListener);
-			this.setState({ eventListenerBound: false });
-		}
+    if (this.state.eventListenerBound) {
+      document.body.classList.remove('has-modal');
+      global.removeEventListener('keydown', this.keyListener);
+      this.setState({ eventListenerBound: false });
+    }
   }
 
   updateHeight() {
@@ -130,14 +130,15 @@ class EasyModal extends React.PureComponent {
   }
 
   renderContent() {
-    const { children, onClose, className } = this.props;
-		const cssClass = className ? { className } : {};
+    const { children, onClose, className, modalClass } = this.props;
+    const cssClass = className ? { className } : {};
+    const modalClasses = modalClass ? { modalClass } : {};
 
     return (
-      <div styleName="modal-container">
+      <div styleName="modal-container" {...modalClasses}>
         <div
-					styleName="modal-overlay"
-					onClick={onClose}
+          styleName="modal-overlay"
+          onClick={onClose}
         />
         <div styleName="modal-content" ref={div => this.modal = div}>
           <div styleName="modal">
@@ -165,11 +166,11 @@ class EasyModal extends React.PureComponent {
         enter
         exit
         timeout={250}
-				appear={false}
-				in={this.props.open}
-				mountOnEnter
-				unmountOnExit
-				addEndListener={this.toggleListeners}
+        appear={false}
+        in={this.props.open}
+        mountOnEnter
+        unmountOnExit
+        addEndListener={this.toggleListeners}
       >
         {this.renderContent()}
       </CSSTransition>
@@ -179,6 +180,6 @@ class EasyModal extends React.PureComponent {
 
 export default CSSModules(EasyModal, styles);
 export {
-	EasyModalHeader,
-	EasyModalFooter
+  EasyModalHeader,
+  EasyModalFooter
 }
